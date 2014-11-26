@@ -1,0 +1,20 @@
+{
+  "name": "vue-sortable-mixin",
+  "version": "0.1.0",
+  "description": "Keep in sync a list(array) of data in a Vue.js view model with jQueryUI sortable",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/agonbina/vue-sortable-mixin.git"
+  },
+  "keywords": [
+    "vue.js",
+    "mixin"
+  ],
+  "author": "Agon Bina <agon_bina@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agonbina/vue-sortable-mixin/issues"
+  },
+  "homepage": "https://github.com/agonbina/vue-sortable-mixin"
+}
