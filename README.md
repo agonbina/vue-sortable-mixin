@@ -1,7 +1,7 @@
 vue-sortable-mixin
 ==================
 
-Keep in sync a list(array) of data in a Vue.js view model with jQueryUI sortable
+Keep in sync a list(array) of data in a Vue.js view model with jQueryUI Sortable
 
 ## Usage
 ```bash
@@ -16,7 +16,7 @@ var sortableMixin = require('vue-sortable-mixin');
 var MyComponent = Vue.extend({
     mixins: [ sortableMixin ],
 
-    template: '<div v-repeat="positions"> {{$value}} </div>',
+    template: '<li v-repeat="positions">{{$value}}</li>',
 
     data: function() {
         return {
@@ -29,7 +29,7 @@ var MyComponent = Vue.extend({
 })
 ```
 
-Now the ```positions``` indexes will stay intact with any changes made by $.sortable.
+Now the ```positions``` indexes will stay intact with any changes on the order of the dom elements they are bound to.
 
 You can pass any of the regular $.fn.sortable options to ```$sortable``` in your data, including a
 special ```$el``` selector if your sortable DOM element is not the default viewModel.$el
