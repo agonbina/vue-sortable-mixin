@@ -1,6 +1,6 @@
 {
   "name": "vue-sortable-mixin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Keep in sync a list(array) of data in a Vue.js view model with jQueryUI sortable",
   "main": "index.js",
   "repository": {
