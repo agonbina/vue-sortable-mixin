@@ -29,9 +29,6 @@ module.exports = {
             prevUpdate(event, ui);
         };
 
-        // Remove the key from the $.fn.sortable options
-        if(options.key) delete options.key;
-
         $($el).sortable(options);
     }
 };
