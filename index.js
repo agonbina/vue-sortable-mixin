@@ -25,6 +25,11 @@ module.exports = {
             // which was holding that position
             vm[listKey].splice(end, 0, swappedEl);
 
+            // Refresh jQuery sortable when we make changes to the listKey array
+            vm.$watch(listKey, function () {
+                $($el).sortable('refresh')
+            });
+
             // Call the user specified .update callback
             prevUpdate(event, ui);
         };
